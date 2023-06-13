@@ -32,6 +32,8 @@ button {
 
 .list-item {
   gap: 10px;
+  list-style: none;
+  padding: 0;
 }
 
 .image {

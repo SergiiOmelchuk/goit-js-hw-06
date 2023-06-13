@@ -5,10 +5,14 @@ let counterValue = 0;
 
 decrementBtn.addEventListener("click", () => {
   counterValue -= 1;
-  valueTxt.textContent = counterValue;
+  updateCounterValue();
 });
 
 incrementBtn.addEventListener("click", () => {
   counterValue += 1;
-  valueTxt.textContent = counterValue;
+  updateCounterValue();
 });
+
+function updateCounterValue() {
+  valueTxt.textContent = counterValue;
+}
